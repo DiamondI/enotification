@@ -1,3 +1,3 @@
-from .notification import *
+from .enotification import *
 
-name = "notification"
+name = "enotification"
