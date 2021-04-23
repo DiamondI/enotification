@@ -4,7 +4,7 @@ import time
 import datetime
 
 
-class Notification:
+class ENotification:
     """
     This is a decorator class
     """
@@ -32,7 +32,7 @@ class Notification:
         server.send_mail(
             self.send_to,
             {
-                "subject": "This is a notification from notification!",
+                "subject": "This is a notification from enotification!",
                 "content_text": f"Your function {func.__name__} is finished!\nStart time: {start}\nEnd time: {end}\nTime cost: {cost}!",
             },
         )

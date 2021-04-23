@@ -1,8 +1,8 @@
-# notification
+# enotification
 
 ## Introduction
 
-`notification` is a small package based on [zmail](https://github.com/zhangyunhao116/zmail), used to email you when your function is finished.
+`enotification` is a small package based on [zmail](https://github.com/zhangyunhao116/zmail), used to email you when your function is finished.
 
 ## Installation
 
@@ -10,7 +10,7 @@ TODO
 
 ## Requirements
 
-Since `notification` is based on zmail, you should meet the requirements of zmail:
+Since `enotification` is based on zmail, you should meet the requirements of zmail:
 
 >Before using it, please ensure:
 >
@@ -23,13 +23,13 @@ Note, since this package uses **f-string**, thus it requires Python>=3.6.
 
 ## QuickStart
 
-`notification` is designed as a decorator class
+`enotification` is designed as a decorator class
 
 ```python
-from notification import Notification
+from enotification import ENotification
 import time
 
-@Notification(send_from="your email", password="your email password")
+@ENotification(send_from="your email", password="your email password")
 def test_func():
     print("test!")
     time.sleep(10)
@@ -37,7 +37,7 @@ def test_func():
 if __name__ == "__main__":
     test_func()
     # your email would receive an email like this:
-    # subject: This is a notification from notification!
+    # subject: This is a notification from enotification!
     # content: 
     # Your function test_func is finished!
     # Start time: 2021-04-23 11:13:54
