@@ -1,2 +1,4 @@
 *test*
 *cache*
+/dist
+*egg-info
