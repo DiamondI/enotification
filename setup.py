@@ -6,7 +6,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setuptools.setup(
     name="enotification",
-    version="0.0.1",
+    version="0.0.2",
     author="DiamondI",
     author_email="920076768@qq.com",
     long_description=long_description,

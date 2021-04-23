@@ -6,7 +6,7 @@
 
 ## Installation
 
-TODO
+`pip install enotification`
 
 ## Requirements
 
