@@ -20,6 +20,9 @@ setuptools.setup(
         "License :: OSI Approved :: MIT License",
         "Operating System :: OS Independent",
     ],
+    install_requires=[
+        "zmail",
+    ],
     package_dir={"": "enotification"},
     python_requires=">=3.6"
 )
