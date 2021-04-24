@@ -41,8 +41,9 @@ class ENotification:
         @wraps(func)
         def wrapper(*args, **kwargs):
             start_time = time.time()
-            func(*args, **kwargs)
+            result = func(*args, **kwargs)
             end_time = time.time()
             self._notify(start_time, end_time, func)
+            return result
 
         return wrapper
