@@ -6,7 +6,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setuptools.setup(
     name="enotification",
-    version="0.0.5",
+    version="0.0.6",
     author="DiamondI",
     author_email="920076768@qq.com",
     description="A package to send an email when your function finished.",
