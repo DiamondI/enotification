@@ -6,9 +6,10 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setuptools.setup(
     name="enotification",
-    version="0.0.3",
+    version="0.0.4",
     author="DiamondI",
     author_email="920076768@qq.com",
+    description="A package to send an email when your function finished.",
     long_description=long_description,
     long_description_content_type="text/markdown",
     url="https://github.com/DiamondI/enotification",
@@ -23,6 +24,6 @@ setuptools.setup(
     install_requires=[
         "zmail",
     ],
-    package_dir={"": "enotification"},
+    packages=setuptools.find_packages(),
     python_requires=">=3.6"
 )
