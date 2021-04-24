@@ -46,6 +46,11 @@ if __name__ == "__main__":
 
 ```
 
+## TODO
+
+- [x] Ask user to input her email account or password if it is empty (using [getpass](https://docs.python.org/3/library/getpass.html) module). Usage: `@ENotification()`. **Note:** the `()` is must.
+- [ ] 
+
 ## Q & A
 
 If the notification email is not sent correctly, please read zmail's [Q&A](https://github.com/zhangyunhao116/zmail#qa) part to see more specific configurations.

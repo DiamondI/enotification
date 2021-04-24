@@ -2,6 +2,7 @@ import zmail
 from functools import wraps
 import time
 import datetime
+import getpass
 
 
 class ENotification:
@@ -9,12 +10,21 @@ class ENotification:
     This is a decorator class
     """
 
-    def __init__(self, send_from: str = "", password="", send_to: str = "") -> None:
+    def __init__(self, send_from: str="", password: str="", send_to: str="") -> None:
         """
         send the mail from `send_from` to `send_to`. Note: the password is send_from's password.
         """
         self.send_from = send_from
+        if self.send_from == "":
+            self.send_from = input("Please input your email address:")
         self.password = password
+        if self.password == "":
+            x = getpass.getpass("Password (Your input will not shown here):")
+            y = getpass.getpass("Please input your password again (Your input will not shown here):")
+            if x == y:
+                self.password = x
+            else:
+                raise ValueError("Two passwords are not identical!")
         self.send_to = send_to
         if self.send_to == "":
             self.send_to = self.send_from
