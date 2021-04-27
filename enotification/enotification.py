@@ -19,12 +19,7 @@ class ENotification:
             self.send_from = input("Please input your email address:")
         self.password = password
         if self.password == "":
-            x = getpass.getpass("Password (Your input will not shown here):")
-            y = getpass.getpass("Please input your password again (Your input will not shown here):")
-            if x == y:
-                self.password = x
-            else:
-                raise ValueError("Two passwords are not identical!")
+            self.password = getpass.getpass("Password (Your input will not shown here):")
         self.send_to = send_to
         if self.send_to == "":
             self.send_to = self.send_from
